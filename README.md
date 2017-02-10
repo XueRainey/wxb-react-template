@@ -11,9 +11,7 @@ npm start
 npm run build
 ```
 
-# Suport
-
-# 功能列表
+# Features
 
 - [x] Hot Module Replacement
 - [x] Babel for React & ES6
@@ -26,3 +24,8 @@ npm run build
 - [] SourceMap 代码映射
 - [x] 开发环境 Dashboard 界面
 - [x] antd按需加载(babel-plugin-import)
+
+# Suport
+
+- [ant.design](https://ant.design/)
+- [webpack 2.0](http://webpack.js.org/)
