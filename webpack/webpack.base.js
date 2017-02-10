@@ -1,4 +1,5 @@
 const path = require('path');
+const config = require('./config');
 
 module.exports = {
     entry: {
@@ -9,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].js',
-        publicPath: 'http://localhost:8080/',
+        publicPath: `http://localhost:${config.port}/`,
     },
     resolve: {
         extensions: ['.js', '.jsx', '.less'],
