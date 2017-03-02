@@ -47,3 +47,7 @@ npm run build
 - github: [XueRainey](https://github.com/XueRainey)
 - Email: [xuebing_orz@icloud.com](mailto:xuebing_orz@icloud.com)
 - [Personal blog](http://www.rainey.space/)
+
+---
+
+本项目启发自：[viva-react-template](https://github.com/QuVideo/viva-react-template)
