@@ -4,7 +4,7 @@
   "description": "微小宝React项目模板",
   "main": "index.js",
   "scripts": {
-    "start": "node webpack/server.js",
+    "start": "webpack -w --config webpack/webpack.prod.js",
     "build": "webpack --config webpack/webpack.prod.js",
     "build-dll": "webpack --config webpack/webpack.dll.js",
     "test": "echo \"Error: no test specified\" && exit 1"

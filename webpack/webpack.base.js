@@ -3,9 +3,15 @@ const config = require('./config');
 
 module.exports = {
     entry: {
-        app: [
-            path.resolve(__dirname, '../src/index.jsx')
-        ]
+        background: [
+            path.resolve(__dirname, '../src/background')
+        ],
+        browserAction: [
+            path.resolve(__dirname, '../src/browserAction')
+        ],
+        contentScript: [
+            path.resolve(__dirname, '../src/contentScript')
+        ],
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
