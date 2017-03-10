@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node webpack/server.js",
     "build": "webpack --config webpack/webpack.prod.js",
+    "build-dll": "webpack --config webpack/webpack.dll.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "XueRainey",

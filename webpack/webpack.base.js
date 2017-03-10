@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].js',
-        publicPath: `http://localhost:${config.port}/`,
+        publicPath: `http://localhost:${config.port}/dist`,
     },
     resolve: {
         extensions: ['.js', '.jsx', '.less'],

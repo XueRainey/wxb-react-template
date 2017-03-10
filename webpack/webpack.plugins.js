@@ -2,9 +2,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Dashboard = require('webpack-dashboard');
 const DashboardPlugin = require('webpack-dashboard/plugin');
-// const dllManifest = require('./manifest.json');
-
-// TODO: dll插件使用
+const dllManifest = require('./dll.manifest.json');
 
 module.exports = function getPlugins(env) {
     // 定义运行环境全局变量
@@ -15,10 +13,10 @@ module.exports = function getPlugins(env) {
     // css代码编译
     const extractCSS = new ExtractTextPlugin('[name].css');
 
-    // const dllReference = new webpack.DllReferencePlugin({
-    //     context: __dirname,
-    //     manifest: dllManifest
-    // });
+    const dllPlugin = new webpack.DllReferencePlugin({
+        context: __dirname,
+        manifest: dllManifest
+    });
 
     if (env === 'develop') {
         // 代码热更新
@@ -27,6 +25,7 @@ module.exports = function getPlugins(env) {
         const dashboard = new DashboardPlugin(new Dashboard().setData);
         return {
             plugins: [
+                dllPlugin,
                 defineVariable,
                 extractCSS,
                 hotReplace,
@@ -41,6 +40,7 @@ module.exports = function getPlugins(env) {
     if (env === 'produce') {
         return {
             plugins: [
+                dllPlugin,
                 defineVariable,
                 extractCSS
             ],

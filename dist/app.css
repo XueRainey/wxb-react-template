@@ -539,9 +539,9 @@ samp {
 }
 @font-face {
   font-family: 'anticon';
-  src: url('https://at.alicdn.com/t/font_r5u29ls31bgldi.eot');
+  src: url('https://at.alicdn.com/t/font_smk8xgfen9xxn7b9.eot');
   /* IE9*/
-  src: url('https://at.alicdn.com/t/font_r5u29ls31bgldi.eot?#iefix') format('embedded-opentype'), /* chrome、firefox */ url('https://at.alicdn.com/t/font_r5u29ls31bgldi.woff') format('woff'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('https://at.alicdn.com/t/font_r5u29ls31bgldi.ttf') format('truetype'), /* iOS 4.1- */ url('https://at.alicdn.com/t/font_r5u29ls31bgldi.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_smk8xgfen9xxn7b9.eot?#iefix') format('embedded-opentype'), /* chrome、firefox */ url('https://at.alicdn.com/t/font_smk8xgfen9xxn7b9.woff') format('woff'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('https://at.alicdn.com/t/font_smk8xgfen9xxn7b9.ttf') format('truetype'), /* iOS 4.1- */ url('https://at.alicdn.com/t/font_smk8xgfen9xxn7b9.svg#iconfont') format('svg');
 }
 .anticon {
   display: inline-block;
@@ -1249,6 +1249,123 @@ samp {
 }
 .anticon-dingding-o:before {
   content: "\E925";
+}
+.anticon-bell:before {
+  content: "\E64E";
+}
+.anticon-disconnect:before {
+  content: "\E64F";
+}
+.anticon-database:before {
+  content: "\E650";
+}
+.anticon-compass:before {
+  content: "\E6DB";
+}
+.anticon-barcode:before {
+  content: "\E652";
+}
+.anticon-hourglass:before {
+  content: "\E653";
+}
+.anticon-key:before {
+  content: "\E654";
+}
+.anticon-flag:before {
+  content: "\E655";
+}
+.anticon-layout:before {
+  content: "\E656";
+}
+.anticon-login:before {
+  content: "\E657";
+}
+.anticon-printer:before {
+  content: "\E673";
+}
+.anticon-sound:before {
+  content: "\E6E9";
+}
+.anticon-usb:before {
+  content: "\E6D7";
+}
+.anticon-skin:before {
+  content: "\E6D8";
+}
+.anticon-tool:before {
+  content: "\E6D9";
+}
+.anticon-sync:before {
+  content: "\E6DA";
+}
+.anticon-wifi:before {
+  content: "\E6D6";
+}
+.anticon-car:before {
+  content: "\E6DC";
+}
+.anticon-copyright:before {
+  content: "\E6DE";
+}
+.anticon-schedule:before {
+  content: "\E6DF";
+}
+.anticon-user-add:before {
+  content: "\E6ED";
+}
+.anticon-user-delete:before {
+  content: "\E6E0";
+}
+.anticon-usergroup-add:before {
+  content: "\E6DD";
+}
+.anticon-usergroup-delete:before {
+  content: "\E6E1";
+}
+.anticon-man:before {
+  content: "\E6E2";
+}
+.anticon-woman:before {
+  content: "\E6EC";
+}
+.anticon-shop:before {
+  content: "\E6E3";
+}
+.anticon-gift:before {
+  content: "\E6E4";
+}
+.anticon-idcard:before {
+  content: "\E6E5";
+}
+.anticon-medicine-box:before {
+  content: "\E6E6";
+}
+.anticon-red-envelope:before {
+  content: "\E6E7";
+}
+.anticon-coffee:before {
+  content: "\E6E8";
+}
+.anticon-trademark:before {
+  content: "\E651";
+}
+.anticon-safety:before {
+  content: "\E6EA";
+}
+.anticon-wallet:before {
+  content: "\E6EB";
+}
+.anticon-bank:before {
+  content: "\E6EE";
+}
+.anticon-trophy:before {
+  content: "\E6EF";
+}
+.anticon-contacts:before {
+  content: "\E6F0";
+}
+.anticon-global:before {
+  content: "\E6F1";
 }
 .anticon-spin:before {
   display: inline-block;
@@ -2078,7 +2195,7 @@ samp {
   overflow: hidden;
 }
 .ant-motion-collapse-active {
-  transition: height .2s, opacity .2s;
+  transition: height .12s, opacity .12s;
 }
 .ant-layout {
   display: flex;
@@ -2095,7 +2212,7 @@ samp {
   flex: 0 0 auto;
 }
 .ant-layout-header {
-  background: rgba(0, 0, 0, 0.75);
+  background: #404040;
   padding: 0 50px;
   height: 64px;
   line-height: 64px;
@@ -2111,7 +2228,7 @@ samp {
 .ant-layout-sider {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   position: relative;
-  background: rgba(0, 0, 0, 0.75);
+  background: #404040;
 }
 .ant-layout-sider-has-trigger {
   padding-bottom: 48px;
@@ -2129,6 +2246,27 @@ samp {
   line-height: 48px;
   background: rgba(75, 75, 75, 0.8);
   color: #fff;
+}
+.ant-layout-sider-zero-width > * {
+  overflow: hidden;
+}
+.ant-layout-sider-zero-width-trigger {
+  position: absolute;
+  top: 64px;
+  right: -36px;
+  text-align: center;
+  width: 36px;
+  height: 42px;
+  line-height: 42px;
+  background: #404040;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+.ant-layout-sider-zero-width-trigger:hover {
+  background: #535353;
 }
 .wxb-main .ant-layout-header {
   color: white;

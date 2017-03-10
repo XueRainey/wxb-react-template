@@ -27,6 +27,7 @@ npm run build
 - [x] Hot Module Replacement
 - [x] Babel for React & ES6
 - [x] ESLint checkout
+- [x] webpack 资源包支持
 - [x] 样式处理
 - [ ] 图片处理
 - [x] JS 压缩
