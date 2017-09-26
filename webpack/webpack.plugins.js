@@ -11,7 +11,7 @@ module.exports = function getPlugins(env) {
         // 定义当前运行环境，在运行环境中可以通过process.env.NODE_ENV访问当前环境
         'process.env.NODE_ENV': JSON.stringify(env),
     }));
-    // css代码编译
+    // css代码提取
     const extractCSS = new ExtractTextPlugin('[name].css');
     plugins.push(extractCSS);
 
